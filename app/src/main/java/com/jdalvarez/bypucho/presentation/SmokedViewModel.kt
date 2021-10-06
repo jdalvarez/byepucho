@@ -1,4 +1,4 @@
-package com.jdalvarez.bypucho.ui
+package com.jdalvarez.bypucho.presentation
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

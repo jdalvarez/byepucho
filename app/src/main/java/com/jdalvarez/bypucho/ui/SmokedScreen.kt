@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.jdalvarez.bypucho.R
 import com.jdalvarez.bypucho.databinding.FragmentSmokedScreenBinding
+import com.jdalvarez.bypucho.presentation.SmokedViewModel
 
 class SmokedScreen : Fragment() {
 
@@ -28,12 +28,12 @@ class SmokedScreen : Fragment() {
     }
 
     private fun setupUi() {
-        vm.puchosLiveDataGaspar.observe(viewLifecycleOwner) {
-            binding.gasparQuantity.text = it.toString()
-        }
-        vm.puchosLiveDataWichon.observe(viewLifecycleOwner) {
-            binding.wichonQuantity.text = it.toString()
-        }
+//        vm.puchosLiveDataGaspar.observe(viewLifecycleOwner) {
+//            binding.gasparQuantity.text = it.toString()
+//        }
+//        vm.puchosLiveDataWichon.observe(viewLifecycleOwner) {
+//            binding.wichonQuantity.text = it.toString()
+//        }
         // onclick listener
     }
 

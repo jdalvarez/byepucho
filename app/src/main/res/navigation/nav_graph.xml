@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authScreen">
+
+    <fragment
+        android:id="@+id/authScreen"
+        android:name="com.jdalvarez.bypucho.ui.AuthScreen"
+        android:label="fragment_auth_screen"
+        tools:layout="@layout/fragment_auth_screen" >
+        <action
+            android:id="@+id/action_authScreen_to_smokedScreen"
+            app:destination="@id/smokedScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/smokedScreen"
+        android:name="com.jdalvarez.bypucho.ui.SmokedScreen"
+        android:label="fragment_smoked_screen"
+        tools:layout="@layout/fragment_smoked_screen" />
+</navigation>
